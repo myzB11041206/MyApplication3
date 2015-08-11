@@ -27,12 +27,7 @@ public class MainActivity extends Activity {
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
 
         //为ViewPager添加动画
-        mViewPager.setPageTransformer(true, new ViewPager.PageTransformer() {
-            @Override
-            public void transformPage(View page, float position) {
-
-            }
-        });
+//        mViewPager.setPageTransformer(true, new DepthPageTransformer());
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public Object instantiateItem(ViewGroup container, int position) {
