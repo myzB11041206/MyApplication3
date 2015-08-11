@@ -55,11 +55,23 @@ public class MainActivity extends Activity {
             }
         });
 
-        mViewPager.setOnClickListener(new View.OnClickListener() {
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener(){
+
             @Override
-            public void onClick(View view) {
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+                
             }
-            });
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     @Override
