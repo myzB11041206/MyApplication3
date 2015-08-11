@@ -3,6 +3,7 @@ package com.example.ksdhc.myapplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,12 +54,12 @@ public class MainActivity extends Activity {
                 return view == object;
             }
         });
+
         mViewPager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
-        });
+            });
     }
 
     @Override
