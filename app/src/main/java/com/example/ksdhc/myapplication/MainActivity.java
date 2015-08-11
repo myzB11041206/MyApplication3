@@ -25,6 +25,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
+
+        //为ViewPager添加动画
+//        mViewPager.setPageTransformer(true, new DepthPageTransformer());
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public Object instantiateItem(ViewGroup container, int position) {
