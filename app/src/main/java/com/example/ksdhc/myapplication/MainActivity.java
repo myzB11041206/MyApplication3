@@ -53,6 +53,12 @@ public class MainActivity extends Activity {
                 return view == object;
             }
         });
+        mViewPager.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
     @Override
