@@ -3,6 +3,7 @@ package com.example.ksdhc.myapplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,6 +52,23 @@ public class MainActivity extends Activity {
             @Override
             public boolean isViewFromObject(View view, Object object) {
                 return view == object;
+            }
+        });
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener(){
+
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
             }
         });
     }
