@@ -3,7 +3,6 @@ package com.example.ksdhc.myapplication;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,7 @@ import java.util.List;
 
 
 public class MainActivity extends Activity {
-    private ViewPager mViewPager;
+    private AnimViewPager mViewPager;
     private int []mImagIds = new int[]{R.drawable.guide_image1,
             R.drawable.guide_image2,R.drawable.guide_image3};
     private List<ImageView> mImages = new ArrayList<ImageView>();
@@ -24,10 +23,10 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mViewPager = (ViewPager) findViewById(R.id.id_viewpager);
+        mViewPager = (AnimViewPager) findViewById(R.id.id_viewpager);
 
         //为ViewPager添加动画
-//        mViewPager.setPageTransformer(true, new DepthPageTransformer());
+        mViewPager.setPageTransformer(true, new DepthPageTransformer());
         mViewPager.setAdapter(new PagerAdapter() {
             @Override
             public Object instantiateItem(ViewGroup container, int position) {

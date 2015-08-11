@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.ksdhc.myapplication.ViewPager
+    <com.example.ksdhc.myapplication.AnimViewPager
         android:id="@+id/id_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
